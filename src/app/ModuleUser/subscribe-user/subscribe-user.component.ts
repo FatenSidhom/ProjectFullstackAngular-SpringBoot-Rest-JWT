@@ -29,7 +29,7 @@ export class SubscribeUserComponent implements OnInit {
       'confpass': new FormControl('',Validators.required),
    
     })
-  }
+  } 
  
 addUser(){
      console.log(this.newUserSubscribe);
