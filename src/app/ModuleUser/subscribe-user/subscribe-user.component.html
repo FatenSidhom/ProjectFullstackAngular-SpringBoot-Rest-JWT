@@ -9,7 +9,7 @@
                      
 
                     <div class="form-group row p-1 ">
-                        <label class="col-md-3 form-control-label required ms-5"> First Name </label>
+                        <label class="col-md-3 form-control-label required ms-5"> First name </label>
                         <div class="col-md-7">
                        <input class="form-control" name="firstname" type="text" minlength="3" [(ngModel)]="newUserSubscribe.firstname"  formControlName="firstname">    
                        <div class="alert alert-danger" *ngIf="myForm.controls['firstname'].invalid && myForm.controls['firstname'].touched">
@@ -20,7 +20,7 @@
                       
                     </div>
                       <div class="form-group row p-1 ">
-                        <label class="col-md-3 form-control-label required ms-5"> Last Name </label>
+                        <label class="col-md-3 form-control-label required ms-5"> Last name </label>
                         <div class="col-md-7">
                        <input class="form-control" name="Lastname" type="text" minlength="3"[(ngModel)]="newUserSubscribe.lastname"  formControlName="lastname">   
                        <div class="alert alert-danger" *ngIf="myForm.controls['lastname'].invalid && myForm.controls['lastname'].touched">
@@ -31,7 +31,7 @@
                       </div>
 
                       <div class="form-group row p-1 ">
-                        <label class="col-md-3 form-control-label required ms-5"> UserName </label>
+                        <label class="col-md-3 form-control-label required ms-5"> Username </label>
                         <div class="col-md-7">
                        <input class="form-control" name="username" type="text" minlength="3" [(ngModel)]="newUserSubscribe.username"  formControlName="username">   
                        <div class="alert alert-danger" *ngIf="myForm.controls['username'].invalid && myForm.controls['username'].touched">
@@ -42,7 +42,7 @@
                       </div>
 
                       <div class="form-group row p-1 ">
-                        <label class="col-md-3 form-control-label required ms-5"> BirthDate</label>
+                        <label class="col-md-3 form-control-label required ms-5"> Birthdate</label>
                         <div class="col-md-7">
                        <input class="form-control" name="birthday" type="date"  [ngModel]= "newUserSubscribe.birthdate | date: 'yyyy-MM-dd'" 
                        (ngModelChange)=" newUserSubscribe.birthdate= $event"  formControlName="birthday">  
@@ -80,7 +80,7 @@
                          </div>
 
                         <div class="form-group row p-1 ">
-                        <label class="col-md-3 form-control-label required ms-5">Confirm Password </label>
+                        <label class="col-md-3 form-control-label required ms-5">Confirm password </label>
                         <div class="col-md-7">
                         <input class="form-control" name="confpass" type="password" [(ngModel)]="newUserSubscribe.confpass"  formControlName="confpass"> 
                         <div class="alert alert-danger" *ngIf="myForm.controls['confpass'].invalid && myForm.controls['confpass'].touched">

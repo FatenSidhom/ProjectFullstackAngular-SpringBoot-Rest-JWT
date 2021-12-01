@@ -8,7 +8,7 @@
             <form  [formGroup]="myForm"  >
                 <fieldset class="border m-30">
                       <div class="form-group row p-1 ">
-                        <label class="col-md-3 form-control-label required ms-5"> UserName </label>
+                        <label class="col-md-3 form-control-label required ms-5"> New username </label>
                         <div class="col-md-7">
                             <input class="form-control" name="username" type="text" minlength="3" [(ngModel)]="currentUser.username"  formControlName="newusername">   
                             <div class="alert alert-danger" *ngIf="myForm.controls['newusername'].invalid && myForm.controls['newusername'].touched">
@@ -17,20 +17,24 @@
                              </div>
                         </div>
                         </div>
-                          
+                           <!--
                             <div class="form-group row p-1 ">
-                            <label class="col-md-3 form-control-label required ms-5"> Password </label>
+                            <label class="col-md-3 form-control-label required ms-5">Old password </label>
                             <div class="col-md-7">
-                            <input class="form-control" name="password" type="password"  >                    
+                            <input class="form-control" name="oldpassword" type="password"  formControlName="oldpassword" > 
+                            <div class="alert alert-danger" *ngIf="myForm.controls['oldpassword'].invalid && myForm.controls['oldpassword'].touched">
+                            <small *ngIf="myForm.controls['oldpassword'].hasError('required')">Old password is required</small>                    
                             </div>
                             </div>
+                             </div>
+                          -->
      
 
 
                         <div class="form-group row p-1 ">
                         <label class="col-md-3 form-control-label required ms-5">New password </label>
                         <div class="col-md-7">
-                            <input class="form-control" name="password" type="password"  pattern = "^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$" [(ngModel)]="currentUser.password"  formControlName="newpassword"> 
+                            <input class="form-control" name="password" type="password"  pattern = "^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$" [(ngModel)]="currentUser.password"    formControlName="newpassword"> 
                             <div class="alert alert-danger" *ngIf="myForm.controls['newpassword'].invalid && myForm.controls['newpassword'].touched">
                             <small *ngIf="myForm.controls['newpassword'].hasError('required')">New password is required</small> 
                             <small *ngIf="myForm.controls['newpassword'].hasError('pattern')">The new password contains at least eight characters, at least one letter and one number</small>
@@ -41,11 +45,11 @@
                         <div class="form-group row p-1 ">
                         <label class="col-md-3 form-control-label required ms-5">Confirm new password </label>
                         <div class="col-md-7">
-                            <input class="form-control" name="confnewpass" type="password" [(ngModel)]="currentUser.confpass"  formControlName="confnewpass"> 
+                            <input class="form-control" name="confnewpass" type="password" [(ngModel)]="currentUser.confpass"    formControlName="confnewpass"> 
                             <div class="alert alert-danger" *ngIf="myForm.controls['confnewpass'].invalid && myForm.controls['confnewpass'].touched">
-                            <small *ngIf="myForm.controls['confpass'].hasError('required')">Confirm new password is required</small> 
+                            <small *ngIf="myForm.controls['confnewpass'].hasError('required')">Confirm new password is required</small> 
                             <small class="alert alert-danger" *ngIf="myForm.controls['confnewpass'].value!=myForm.controls['confnewpass'].value
-                             && myForm.controls['confpass'].dirty">Please give a valid password
+                             && myForm.controls['confnewpass'].dirty">Please give a valid password
                             </small> 
                             </div> 
                         </div>
@@ -53,7 +57,7 @@
                          <div class="form-group row ms-5 me-5 ">
                           <div class="form-group row p-1 ">
 
-                            <button class="btn btn-outline-success" [disabled]="myForm.invalid || myForm.controls['newpassword'].value!=myForm.controls['confnewpass'].value "    >Update</button>&nbsp;
+                            <button class="btn btn-outline-success" [disabled]="myForm.invalid || myForm.controls['newpassword'].value!=myForm.controls['confnewpass'].value" (click)="updateUser()"    >Update</button>&nbsp;
                           
                                             
                         </div>

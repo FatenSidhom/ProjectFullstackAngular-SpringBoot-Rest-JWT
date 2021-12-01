@@ -12,6 +12,7 @@ import { UserService } from '../services/user.service';
 export class UpdateAdminComponent implements OnInit {
   
   currentUser = new UserSubscribe();
+  user = new UserSubscribe();
   myForm: FormGroup;
   constructor(private activatedRoute: ActivatedRoute, private userService: UserService) { }
 
@@ -19,7 +20,6 @@ export class UpdateAdminComponent implements OnInit {
 
     this.myForm = new FormGroup({
       'newusername': new FormControl('',Validators.required),
-      'oldpassword': new FormControl('',Validators.required),
       'newpassword': new FormControl('',Validators.required),
       'confnewpass': new FormControl('',Validators.required),
     
@@ -29,6 +29,12 @@ export class UpdateAdminComponent implements OnInit {
     //console.log(this.activatedRoute.snapshot.params.username);
     this.currentUser = this.userService.consulterUser(this.activatedRoute.snapshot.params.username);
     console.log(this.currentUser);
+  
+  }
+   
+  updateUser(){
+    console.log(this.currentUser);
+    this.userService.updateuser(this.currentUser);
   }
 
 }

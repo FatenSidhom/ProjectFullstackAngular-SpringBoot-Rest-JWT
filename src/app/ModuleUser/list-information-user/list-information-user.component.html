@@ -16,7 +16,7 @@
                         <td>{{user.confpass}}</td>
                         <td>{{user.roles}}</td>  
                         <td><button  class="btn btn-danger" (click)="deleteUser(user)"  >Delete</button ></td>
-                         <td><a  class="btn btn-success" [routerLink]="['/updateAdmin',user.username]">Update</a></td>                             
+                         <td><a  class="btn btn-success" [hidden]="user.roles=='USER' "  [routerLink]="['/updateAdmin',user.username]">Update</a></td>                             
                     </tr>
                 </tbody>
             </table>

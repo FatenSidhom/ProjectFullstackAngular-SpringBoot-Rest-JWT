@@ -17,6 +17,10 @@ export class UserService {
       {firstname:"mohamed",lastname:"jaidi",username:"mohamedjaidi",
       birthdate: new Date("07/11/2000"),email:"mohamed.jaidi@esprit.tn",
       password:"12345azer",confpass:"12345azer",roles:"USER"},
+
+      {firstname:"wael",lastname:"jaidi",username:"waeljaidi",
+      birthdate: new Date("07/11/1996"),email:"wael.jaidi@esprit.tn",
+      password:"12345azer",confpass:"12345azer",roles:"ADMIN"},
  ];
 
    }
@@ -40,6 +44,11 @@ export class UserService {
    consulterUser( username: string): UserSubscribe  {
     this.user = this.users.find(u =>u.username == username)
     return this.user;
+    }
+
+    updateuser(user:UserSubscribe){
+          this.SuppUser(user);
+          this.pushUser(user);
     }
 } 
  
