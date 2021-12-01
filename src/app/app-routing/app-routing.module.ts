@@ -19,7 +19,7 @@ const ROUTES: Routes = [
    {path: "updateAdmin/:username", component: UpdateAdminComponent},
    {path: "", redirectTo: "users", pathMatch: "full" }
 
-]   
+]    
  
 @NgModule({
   declarations: [],
