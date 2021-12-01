@@ -23,7 +23,7 @@ export class UserService {
       password:"12345azer",confpass:"12345azer",roles:"ADMIN"},
  ];
 
-   }
+   } 
 
    listUser():UserSubscribe []{
      return this.users;

@@ -14,7 +14,7 @@ export class AuthService {
            public loggedUser:string;
             public isloggedIn: Boolean = false;
            public roles:String[];
- 
+  
   constructor(private router: Router) { }
 
          SignIn(user :UserLogin):Boolean{
