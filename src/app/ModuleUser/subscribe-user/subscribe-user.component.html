@@ -49,7 +49,7 @@
                        <span class="form-control-comment">
                         (Ex. : 31/05/1970)
                       </span>   
-                      <div class="alert alert-danger" *ngIf="myForm.controls['birthday'].invalid && myForm.controls['birthday'].touched">
+                         <div class="alert alert-danger" *ngIf="myForm.controls['birthday'].invalid && myForm.controls['birthday'].touched">
                         <small *ngIf="myForm.controls['birthday'].hasError('required')">BirthDate is required</small> 
                         </div>                  
                         </div>
@@ -105,7 +105,7 @@
                       </div>
                        -->
                       
-                        <div class="form-group row p-1 ">
+                       <div class="form-group row p-1 ">
                         <label class="col-md-3 form-control-label required ms-5">Role</label>
                         <div class="col-md-6 form-control-valign">
                           <label class="radio-inline"> 
@@ -115,6 +115,7 @@
                               </label>&nbsp;&nbsp;
                           <label class="radio-inline">
                                 <input class="form-check-input" type="radio" name="user" value="ADMIN" [(ngModel)]="newUserSubscribe.roles" formControlName="roles"  > ADMIN
+                                
                           </label>
                          </div>
                          </div>

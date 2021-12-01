@@ -27,7 +27,7 @@ export class SubscribeUserComponent implements OnInit {
       'email': new FormControl('',Validators.required),
       'password': new FormControl('',Validators.required),
       'confpass': new FormControl('',Validators.required),
-      'roles': new FormControl('',Validators.required),
+   
     })
   }
  

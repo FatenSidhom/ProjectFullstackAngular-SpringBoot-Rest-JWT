@@ -13,6 +13,7 @@ export class UpdateAdminComponent implements OnInit {
   
   currentUser = new UserSubscribe();
   user = new UserSubscribe();
+  message:string;
   myForm: FormGroup;
   constructor(private activatedRoute: ActivatedRoute, private userService: UserService) { }
 
@@ -35,6 +36,7 @@ export class UpdateAdminComponent implements OnInit {
   updateUser(){
     console.log(this.currentUser);
     this.userService.updateuser(this.currentUser);
+    this.message= "Hi "+this.currentUser.lastname+" "+this.currentUser.firstname+"! your username and password have been changed.";
   }
 
 }
