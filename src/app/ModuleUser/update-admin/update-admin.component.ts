@@ -35,9 +35,12 @@ export class UpdateAdminComponent implements OnInit {
    
   updateUser(){
     console.log(this.currentUser);
+    let conf=confirm("Are you sure?");
+    if(conf){
     this.userService.updateuser(this.currentUser);
     this.message= "Hi "+this.currentUser.lastname+" "+this.currentUser.firstname+"! your username and password have been changed.";
   }
+}
 
 }
  
