@@ -3,11 +3,13 @@ import {HttpClient,HttpErrorResponse, HttpHeaders} from '@angular/common/http';
 import {map,catchError} from 'rxjs/operators';
 import { Observable, throwError } from 'rxjs';
 import {Category} from './category';
+import { ProductCateg } from './models/productCateg';
 @Injectable({
   providedIn: 'root'
 })
 export class ApiService {
   apiUrl='http://localhost:3000/category';
+  prodUrl="http://localhost:3000/products";
   httpOptions = {
     headers: new HttpHeaders({
       'content-Type' : 'application/json'
@@ -41,6 +43,12 @@ export class ApiService {
   }
   update(id:number, category:Category): Observable<Category> {
     return this.http.put<Category>(`${this.apiUrl}/${id}`, JSON.stringify(category), this.httpOptions)
+    .pipe(
+      catchError(this.errorHandler)
+    )
+  }
+  getAllProducts():Observable<ProductCateg[]> {
+    return this.http.get<ProductCateg[]>(this.prodUrl)
     .pipe(
       catchError(this.errorHandler)
     )

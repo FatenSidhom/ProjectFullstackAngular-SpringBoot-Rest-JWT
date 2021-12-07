@@ -1,6 +1,11 @@
-nav {
+.title {
   margin: 15px;
   font-size: 20px;
+  color: #3d405c;
+}
+hr {
+  width: 50%;
+  margin-bottom: 30px;
 }
 .wrapper {
   display: flex;
@@ -32,11 +37,24 @@ table {
   padding: 15px;
   height: min-content;
 }
+.modal_succes {
+  position: fixed;
+  margin: 0 auto;
+  text-align: center;
+  width: 30%;
+  top: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1000;
+}
 @media screen and (max-width: 675px) {
   .form_wrapper {
     flex-basis: 85%;
   }
   .table_wrapper {
     flex-basis: 85%;
+  }
+  .modal_succes {
+    width: 80%;
   }
 }

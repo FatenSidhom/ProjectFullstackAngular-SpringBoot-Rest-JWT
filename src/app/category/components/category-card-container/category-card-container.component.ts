@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ApiService } from '../../api.service';
 import {Category} from '../../category';
 import { NgForm } from '@angular/forms';
-import { CategoryModel } from '../../category.model';
+import { CategoryModel } from '../../models/category.model';
 @Component({
   selector: 'categoryCardContainer',
   templateUrl: './category-card-container.component.html',
@@ -12,6 +12,7 @@ export class CategoryCardContainerComponent implements OnInit {
   category!:CategoryModel;
   categories: Category[] = [];
   arrIndex:any = [];
+  modalOpen:boolean=false;
 
   constructor(public api:ApiService) { }
 
@@ -25,6 +26,10 @@ export class CategoryCardContainerComponent implements OnInit {
     let i = this.categories.indexOf(categ);
     this.api.deleteCategory(id).subscribe(()=>{
       this.categories.splice(i,1);
+      this.modalOpen=true;
+      setTimeout(()=>{
+        this.modalOpen=false;
+      },2000);
     })
   }
   postCategoryDetails(f:NgForm,categ:Category) {
@@ -44,6 +49,10 @@ export class CategoryCardContainerComponent implements OnInit {
       })
       f.reset();
       categ.id=0;
+      this.modalOpen=true;
+      setTimeout(()=>{
+        this.modalOpen=false;
+      },2000);
     },
     err=>{
       console.log("something is wrong")
@@ -59,6 +68,10 @@ export class CategoryCardContainerComponent implements OnInit {
       f.reset();
       i=0;
       categ.id=0;
+      this.modalOpen=true;
+      setTimeout(()=>{
+        this.modalOpen=false;
+      },2000);
       })
     }
   }

@@ -1,10 +1,15 @@
-<nav style="--bs-breadcrumb-divider: '/';" aria-label="breadcrumb">
-  <ol class="breadcrumb">
-    <li class="breadcrumb-item"><a href="#">Dashboard</a></li>
-    <li class="breadcrumb-item active" aria-current="page">Category</li>
-  </ol>
-</nav>
-<hr>
+<div class="title">
+  <h1>Numbers of Products for each category</h1>
+  <hr>
+</div>
+
+<app-categ-prod-container></app-categ-prod-container>
+
+<div class="title">
+  <h1>All categories : </h1>
+  <hr>
+</div>
+
 <div class="wrapper">
     <div class="table_wrapper ">
         <table class="table table-bordered">
@@ -61,4 +66,10 @@
     </form>
           
     </div>
+</div>
+<!-- Modal -->
+<div class="modal_succes" *ngIf="modalOpen">
+  <div class="alert alert-success" role="alert">
+    Your opertation has been succefully done ! 
+  </div>
 </div>
