@@ -16,6 +16,7 @@ import { ForbiddenComponent } from './ModuleUser/security/forbidden/forbidden.co
 import { UpdateAdminComponent } from './ModuleUser/update-admin/update-admin.component';
 import { DashbordComponent } from './ModuleUser/dashbord/dashbord.component';
 import { HttpClientModule } from '@angular/common/http';
+import { ProfilComponent } from './ModuleUser/profil/profil.component';
 
 
 
@@ -36,6 +37,7 @@ import { HttpClientModule } from '@angular/common/http';
     ForbiddenComponent,
     UpdateAdminComponent,
     DashbordComponent,
+    ProfilComponent,
    
  
   

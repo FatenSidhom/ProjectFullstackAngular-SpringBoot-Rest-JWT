@@ -8,6 +8,7 @@ import { ForbiddenComponent } from '../ModuleUser/security/forbidden/forbidden.c
 import { ControlbyguardGuard } from '../ModuleUser/security/controlbyguard.guard';
 import { UpdateAdminComponent } from '../ModuleUser/update-admin/update-admin.component';
 import { DashbordComponent } from '../ModuleUser/dashbord/dashbord.component';
+import { ProfilComponent } from '../ModuleUser/profil/profil.component';
 
 
 const ROUTES: Routes = [
@@ -16,7 +17,8 @@ const ROUTES: Routes = [
   {path : "dashbord",component: DashbordComponent, canActivate:[ControlbyguardGuard]},
    {path : "listuser",component: ListInformationUserComponent },
    {path:  'forbidden', component: ForbiddenComponent},
-   {path: "updateAdmin/:username", component: UpdateAdminComponent},
+   {path:  'profil', component: ProfilComponent},
+   {path: "update/:username", component: UpdateAdminComponent},
    {path: "", redirectTo: "users", pathMatch: "full" }
 
 ]    

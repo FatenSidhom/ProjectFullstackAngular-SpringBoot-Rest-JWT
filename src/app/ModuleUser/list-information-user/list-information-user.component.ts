@@ -15,17 +15,21 @@ export class ListInformationUserComponent implements OnInit {
 users: UserSubscribe[];
 
   constructor(private route: ActivatedRoute,private userService: UserService,public authService: AuthService) {
-  this.users=  userService.listUser();
+ 
  }
  
   ngOnInit(): void {
- 
+    this.userService.getUsersWS().subscribe(
+      (data: UserSubscribe[]) =>this.users =data
+    );
   }
-  deleteUser(user:UserSubscribe){
-    console.log(user);
+  deleteUser(id){
+
     let conf=confirm("Are you sure?");
     if(conf)
-    this.userService.SuppUser(user);
+    this.userService.deleteUserWS(id).subscribe(
+      ()=>this.users = this.users.filter(user=>user.id != id)
+    )
 
   }
 }

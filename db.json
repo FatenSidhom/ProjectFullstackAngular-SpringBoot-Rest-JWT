@@ -1,0 +1,48 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "firstname": "raed",
+      "lastname": "jaidi",
+      "username": "raedjaidi",
+      " birthdate": "07/11/1996",
+      "email": "raed.jaidi@esprit.tn",
+      "password": "12345azer",
+      "confpass": "12345azer",
+      "roles": "ADMIN"
+    },
+    {
+      "id": "2",
+      "firstname": "wael",
+      "lastname": "jaidi",
+      "username": "waeljaidi",
+      "birthdate": "07/11/1996",
+      "email": "wael.jaidi@esprit.tn",
+      "password": "12345azer",
+      "confpass": "12345azer",
+      "roles": "ADMIN"
+    },
+    {
+      "id": "3",
+      "firstname": "mohamed",
+      "lastname": "jaidi",
+      "username": "mohamedjaidi",
+      "birthdate": "07/11/2000",
+      "email": "mohamed.jaidi@esprit.tn",
+      "password": "12345azer",
+      "confpass": "12345azer",
+      "roles": "USER"
+    },
+    {
+      "id": "BGFeFdK",
+      "firstname": "wael",
+      "lastname": "jaidi",
+      "username": "waeljaidi",
+      "birthdate": "2000-12-01",
+      "email": "ali.ali@esprit.tn",
+      "password": "azertyu1",
+      "confpass": "azertyu1",
+      "roles": "USER"
+    }
+  ]
+}

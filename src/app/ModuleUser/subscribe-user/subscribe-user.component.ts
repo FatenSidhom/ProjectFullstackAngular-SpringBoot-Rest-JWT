@@ -11,8 +11,9 @@ import { UserService } from '../services/user.service';
 })
 export class SubscribeUserComponent implements OnInit {
   
-  myForm: FormGroup;
-  newUserSubscribe = new UserSubscribe();
+   myForm: FormGroup;
+   newUserSubscribe = new UserSubscribe();
+   users: UserSubscribe[];
    messageForUser:string;
   constructor(private userService: UserService) { }
 
@@ -33,7 +34,10 @@ export class SubscribeUserComponent implements OnInit {
  
 addUser(){
      console.log(this.newUserSubscribe);
-     this.userService.pushUser(this.newUserSubscribe);
+    // this.userService.pushUser(this.newUserSubscribe);
+    this.userService.postUserWS(this.newUserSubscribe).subscribe(
+      ()=> this.users = [this.newUserSubscribe, ...this.users]
+    )
      this.messageForUser= "Welcome " + this.newUserSubscribe.lastname +" " +this.newUserSubscribe.firstname+ ",your account was created!";
 }
 

@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
+import { UserSubscribe } from '../ModuleUser/models/usersubscribe';
 import { AuthService } from '../ModuleUser/services/auth.service';
 
 @Component({
@@ -7,9 +9,9 @@ import { AuthService } from '../ModuleUser/services/auth.service';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent implements OnInit {
-
-  constructor(public authService: AuthService) { }
-
+  users: UserSubscribe[];
+  constructor(public authService: AuthService,private route: ActivatedRoute) { }
+   
   ngOnInit(): void {
   }
   onLogout(){

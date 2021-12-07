@@ -33,9 +33,16 @@
         <li class="nav-item">
           <a class="btn btn-outline-dark" *ngIf="authService.isloggedIn" (click) = "onLogout()" routerLink="logout">Logout</a>
         </li>
+        &nbsp;
+        <li class="nav-item">
+          <a class="btn btn-outline-dark" *ngIf="authService.isloggedIn"  routerLink="profil">MyProfil</a>
+        </li>
+        
       </ul>
+      
         
     </div>
   </div>
+  
 </nav>
- 
+

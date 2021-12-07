@@ -1,8 +1,9 @@
 export class UserSubscribe{
+    id:string;
     firstname:string;
     lastname:string;
     username:string;
-    birthdate:Date;
+    birthdate:string;
     email:string;
     password:String;
     confpass:string;
