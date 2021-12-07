@@ -10,10 +10,13 @@ import { SubscribeUserComponent } from './ModuleUser/subscribe-user/subscribe-us
 import { AppRoutingModule } from './app-routing/app-routing.module';
 import { LoginUserComponent } from './ModuleUser/login-user/login-user.component';
 import { ReactiveFormsModule } from '@angular/forms';
-import { DashbordForAdminComponent } from './ModuleUser/dashbord-for-admin/dashbord-for-admin.component';
+
 import { ListInformationUserComponent } from './ModuleUser/list-information-user/list-information-user.component';
 import { ForbiddenComponent } from './ModuleUser/security/forbidden/forbidden.component';
 import { UpdateAdminComponent } from './ModuleUser/update-admin/update-admin.component';
+import { DashbordComponent } from './ModuleUser/dashbord/dashbord.component';
+import { HttpClientModule } from '@angular/common/http';
+
 
 
 
@@ -29,10 +32,12 @@ import { UpdateAdminComponent } from './ModuleUser/update-admin/update-admin.com
     FooterComponent,
     SubscribeUserComponent,
     LoginUserComponent,
-    DashbordForAdminComponent,
     ListInformationUserComponent,
     ForbiddenComponent,
     UpdateAdminComponent,
+    DashbordComponent,
+   
+ 
   
  
    
@@ -43,7 +48,9 @@ import { UpdateAdminComponent } from './ModuleUser/update-admin/update-admin.com
   imports: [
     BrowserModule,
     AppRoutingModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule
+  
   ],
   providers: [],
   bootstrap: [AppComponent]
