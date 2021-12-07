@@ -1,0 +1,22 @@
+{
+  "category": [
+    {
+      "id": 1,
+      "name": "anything1",
+      "ref": "#1111",
+      "quantity": 150
+    },
+    {
+      "id": 2,
+      "name": "anything2",
+      "ref": "#222",
+      "quantity": 300
+    },
+    {
+      "id": 3,
+      "name": "anything3",
+      "ref": "#33",
+      "quantity": 452
+    }
+  ]
+}

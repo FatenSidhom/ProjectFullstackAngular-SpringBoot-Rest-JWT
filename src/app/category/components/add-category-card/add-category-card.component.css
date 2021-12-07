@@ -1,0 +1,18 @@
+.add_card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  border: 2px solid rgba(128, 128, 128, 0.37);
+  border-radius: 5px;
+  width: 250px;
+  margin-left: 10px;
+  height: 140px;
+  margin-top: 50px;
+  text-align: center;
+}
+.add_card > i {
+  font-size: 50px;
+  cursor: pointer;
+  color: rgba(128, 128, 128, 0.37);
+}

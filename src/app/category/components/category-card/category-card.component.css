@@ -1,0 +1,51 @@
+.cpanel {
+  width: 250px;
+  margin-left: 10px;
+  height: 130px;
+  background-color: #fff;
+  color: #007bff;
+  margin-top: 50px;
+  text-align: center;
+  position: relative;
+  border-top: 3px solid #8400ff;
+  border-radius: 8px;
+}
+.icon-part i {
+  font-size: 30px;
+  padding: 10px;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  margin-top: -25px;
+  margin-bottom: 10px;
+  background-color: #8400ff;
+  color: #fff;
+}
+.icon-part p {
+  margin: 0px;
+  font-size: 20px;
+  padding-bottom: 10px;
+}
+.card-content-part {
+  background-color: #07705b;
+  padding: 5px 0px;
+  transition: all ease-in-out 0.3s;
+}
+.cpanel .card-content-part:hover {
+  background-color: #125a4c;
+  cursor: pointer;
+  transition: all ease-in-out 0.3s;
+}
+.card-content-part a {
+  color: #fff;
+  text-decoration: none;
+}
+small {
+  font-size: 16px;
+  font-weight: 700;
+}
+button {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  color: white;
+}
