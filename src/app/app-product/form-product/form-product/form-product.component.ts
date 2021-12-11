@@ -26,7 +26,7 @@ export class FormProductComponent implements OnInit {
 
     this.productForm = this.builder.group({
       id: [
-        this.product.libelle,
+        this.product.id,
         [Validators.required, Validators.minLength(3)],
       ],
       title: [

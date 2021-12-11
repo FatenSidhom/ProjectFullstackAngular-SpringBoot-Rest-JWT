@@ -24,8 +24,8 @@
     {
       "id": "45678",
       "libelle": "food1",
-      "prixUnitaire": "6666",
-      "photo": "orange.jpg",
+      "prixUnitaire": "5858",
+      "photo": "juice.jpg",
       "categorie": "food"
     }
   ]
