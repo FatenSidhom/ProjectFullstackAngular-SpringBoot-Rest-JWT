@@ -1,26 +1,21 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppComponent } from './app.component';
-import { HeaderComponent } from './header/header.component';
-import { SlideComponent } from './slide/slide.component';
-import { HomeComponent } from './home/home.component';
-import { FooterComponent } from './footer/footer.component';
-
+import { AppRoutingModule } from './app-routing.module';
+import { HeaderComponent } from './shared/header/header/header.component';
+import { HomeComponent } from './shared/home/home/home.component';
+import { NotFoundComponent } from './shared/not-found/not-found/not-found.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    SlideComponent,
     HomeComponent,
-    FooterComponent,
-  
+    NotFoundComponent,
   ],
-  imports: [
-    BrowserModule
-  ],
+  imports: [BrowserModule, AppRoutingModule, HttpClientModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

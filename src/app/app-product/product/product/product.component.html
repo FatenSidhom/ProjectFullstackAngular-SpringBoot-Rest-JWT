@@ -1,0 +1,27 @@
+<br />
+<div class="card" style="width: 18rem">
+  <img
+    src="../assets/{{ this.product.photo }}"
+    class="card-img-top"
+    alt="..."
+  />
+  <div class="card-body">
+    <h4 style="text-align: center" class="card-title">
+      {{ this.product.libelle }}
+    </h4>
+
+    <p style="text-align: center" class="card-text">
+      jomla 9sayyra, kelma thnin. ama lezem nahbet aal starr kima hakka.
+    </p>
+    <h3 style="text-align: center; color: green">
+      <b>{{ this.product.prixUnitaire }}DT</b>
+    </h3>
+    <br />
+    &nbsp;
+    <button class="btn btn-danger" (click)="deleteNotif()">Delete</button>
+    &nbsp;
+    <button class="btn btn-warning" (click)="updateNotif()">Update</button>
+    &nbsp;
+    <button class="btn btn-outline-success">Buy</button>
+  </div>
+</div>

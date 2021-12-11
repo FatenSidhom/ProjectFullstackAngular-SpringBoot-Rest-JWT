@@ -1,0 +1,25 @@
+{
+  "products": [
+    {
+      "libelle": "mariem",
+      "prixUnitaire": "98",
+      "photo": "meat.jpg",
+      "categorie": "food",
+      "id": "PtLFX3X"
+    },
+    {
+      "libelle": "aaa",
+      "prixUnitaire": "85",
+      "photo": "juice.jpg",
+      "categorie": "food",
+      "id": "GQ_7t2U"
+    },
+    {
+      "id": "1234",
+      "libelle": "fafa",
+      "prixUnitaire": "140",
+      "photo": "dryfruit.jpg",
+      "categorie": "food"
+    }
+  ]
+}
