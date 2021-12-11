@@ -13,13 +13,15 @@ export class MainProductComponent implements OnInit {
   buttonString: String = 'Add New Product';
   listProduct: Product[] = [];
 
-  constructor(private productService: ProductService) {}
+  constructor(private productService: ProductService) {
+  }
 
   ngOnInit(): void {
     this.productService
       .getListProduct()
       .subscribe((data: Product[]) => (this.listProduct = data));
   }
+
   changePage() {
     this.isForm = !this.isForm;
     if (this.isForm) {
@@ -29,36 +31,37 @@ export class MainProductComponent implements OnInit {
       this.buttonString = 'Add New Product';
     }
   }
+
   deleteProduct(p: Product) {
     let i = this.listProduct.indexOf(p);
     this.productService
       .deleteProduct(p.id)
       .subscribe(() => this.listProduct.splice(i, 1));
   }
-  saveProduct(product: Product) {
-    let i = this.listProduct.indexOf(product);
 
-    if (i != -1) {
-      //update a product
-      this.productService.updateProduct(product).subscribe(
-        () => (this.listProduct[i] = product),
-        () => console.log('error')
-      );
-    } else {
-      //add a new product
-      this.productService.addProduct(product).subscribe(
-        () => this.listProduct.push(product),
-        () => console.log('error')
-      );
-    }
-    this.isForm = false;
-    this.buttonString = 'Add New Product';
+  updateProduct(p: Product) {
+    this.changePage();
+    this.inputProduct = p;
+  }
+
+  saveProduct(product: Product) {
+    //add a new product
+    this.productService.addProduct(product).subscribe(
+      () => this.listProduct.push(product),
+      () => console.log('error')
+    );
+   this.changePage();
     this.inputProduct = new Product();
   }
 
-  updateProduct(p: Product) {
-    this.isForm = true;
-    this.buttonString = 'Go Back To List';
-    this.inputProduct = p;
+  resaveProduct(product: Product) {
+    //update a product
+    let i = this.listProduct.indexOf(product);
+
+    this.productService.updateProduct(product).subscribe(
+      () => (this.listProduct[i] = product),
+      () => console.log('error'));
+    this.changePage();
+
   }
 }

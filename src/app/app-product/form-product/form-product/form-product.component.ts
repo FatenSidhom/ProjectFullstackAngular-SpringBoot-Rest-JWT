@@ -14,7 +14,9 @@ export class FormProductComponent implements OnInit {
   private product!: Product;
   productForm!: FormGroup;
   @Input() updateProduct!: Product;
+  @Input() list!: Product[];
   @Output() addEvent = new EventEmitter<Product>();
+  @Output() changeEvent = new EventEmitter<Product>();
   constructor(private builder: FormBuilder) {}
 
   ngOnInit(): void {
@@ -25,10 +27,6 @@ export class FormProductComponent implements OnInit {
     }
 
     this.productForm = this.builder.group({
-      id: [
-        this.product.id,
-        [Validators.required, Validators.minLength(3)],
-      ],
       title: [
         this.product.libelle,
         [Validators.required, Validators.minLength(3)],
@@ -37,7 +35,7 @@ export class FormProductComponent implements OnInit {
         this.product.prixUnitaire,
         [Validators.required, Validators.min(10)],
       ],
-      photo: [this.product.photo, Validators.required],
+      photo: ['', Validators.required],
       category: [this.product.categorie, Validators.required],
     });
   }
@@ -46,13 +44,24 @@ export class FormProductComponent implements OnInit {
     console.log(this.selectedFile);
   }
   addProduct() {
-    this.product.id = this.productForm.value.id;
-    this.product.libelle = this.productForm.value.title;
-    this.product.prixUnitaire = this.productForm.value.price;
-    this.product.photo = String(this.selectedFile);
-    this.product.categorie = this.productForm.value.category;
+      let i = this.list.indexOf(this.product);
+      console.log(i);
+      this.product.libelle = this.productForm.value.title;
+      this.product.prixUnitaire = this.productForm.value.price;
+      this.product.photo = String(this.selectedFile);
+      this.product.categorie = this.productForm.value.category;
+    if (i == -1) {
+      //new product id
+      this.product.id = String(Math.floor(Math.random() * (9001) + 1000));
+      this.addEvent.emit(this.product);
+    }
+    else{
+      this.changeEvent.emit(this.product);
+    }
 
-    this.addEvent.emit(this.product);
+
+
+
   }
 
 }

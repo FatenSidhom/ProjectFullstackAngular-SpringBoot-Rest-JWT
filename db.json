@@ -1,32 +1,53 @@
 {
   "products": [
     {
-      "libelle": "mariem",
-      "prixUnitaire": "98",
-      "photo": "meat.jpg",
-      "categorie": "food",
-      "id": "PtLFX3X"
-    },
-    {
-      "libelle": "aaa",
-      "prixUnitaire": "85",
-      "photo": "juice.jpg",
-      "categorie": "food",
-      "id": "GQ_7t2U"
-    },
-    {
-      "id": "1234",
-      "libelle": "fafa",
-      "prixUnitaire": "140",
+      "id": "45678",
+      "libelle": "food1",
+      "prixUnitaire": "5858",
       "photo": "dryfruit.jpg",
       "categorie": "food"
     },
     {
-      "id": "45678",
-      "libelle": "food1",
-      "prixUnitaire": "5858",
-      "photo": "juice.jpg",
+      "id": "6445",
+      "libelle": "mariem ",
+      "prixUnitaire": "785",
+      "photo": "orange.jpg",
       "categorie": "food"
+    },
+    {
+      "libelle": "some juice",
+      "prixUnitaire": "889",
+      "photo": "juice.jpg",
+      "categorie": "food",
+      "id": "9577"
+    },
+    {
+      "libelle": "some oranges",
+      "prixUnitaire": "7856",
+      "photo": "orange.jpg",
+      "categorie": "food",
+      "id": "3617"
+    },
+    {
+      "libelle": "some dryfruit",
+      "prixUnitaire": "8563",
+      "photo": "dryfruit.jpg",
+      "categorie": "food",
+      "id": "2936"
+    },
+    {
+      "libelle": "some more oranges",
+      "prixUnitaire": "875",
+      "photo": "orange.jpg",
+      "categorie": "food",
+      "id": "9685"
+    },
+    {
+      "libelle": "this is some meat",
+      "prixUnitaire": "44",
+      "photo": "meat.jpg",
+      "categorie": "food",
+      "id": "7899"
     }
   ]
 }
