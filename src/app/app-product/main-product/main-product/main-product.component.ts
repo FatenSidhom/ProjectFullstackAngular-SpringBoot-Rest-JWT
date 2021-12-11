@@ -58,6 +58,7 @@ export class MainProductComponent implements OnInit {
 
   updateProduct(p: Product) {
     this.isForm = true;
+    this.buttonString = 'Go Back To List';
     this.inputProduct = p;
   }
 }

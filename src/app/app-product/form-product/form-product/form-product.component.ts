@@ -1,6 +1,6 @@
 import { Component, Input, Output, OnInit } from '@angular/core';
 import { FormBuilder } from '@angular/forms';
-import { FormGroup, Form } from '@angular/forms';
+import { FormGroup } from '@angular/forms';
 import { Validators } from '@angular/forms';
 import { EventEmitter } from '@angular/core';
 import { Product } from '../../../core/model/product.model';
@@ -54,4 +54,5 @@ export class FormProductComponent implements OnInit {
 
     this.addEvent.emit(this.product);
   }
+
 }

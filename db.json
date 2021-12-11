@@ -20,6 +20,13 @@
       "prixUnitaire": "140",
       "photo": "dryfruit.jpg",
       "categorie": "food"
+    },
+    {
+      "id": "45678",
+      "libelle": "food1",
+      "prixUnitaire": "6666",
+      "photo": "orange.jpg",
+      "categorie": "food"
     }
   ]
 }
