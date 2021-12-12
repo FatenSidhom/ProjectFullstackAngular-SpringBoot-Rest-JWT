@@ -35,7 +35,7 @@ export class MainProductComponent implements OnInit {
   }
 
   deleteProduct(p: Product) {
-    const myCompDialog = this.dialog.open(DeleteDialogComponent,{disableClose: true, panelClass:['dialog']});
+    const myCompDialog = this.dialog.open(DeleteDialogComponent,{disableClose: true, panelClass:'dialog-custom'});
     myCompDialog.afterOpened().subscribe((res) => {
       // Trigger After Dialog Opened
       console.log('After Opened', { res });

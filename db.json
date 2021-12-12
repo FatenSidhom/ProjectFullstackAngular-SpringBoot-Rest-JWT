@@ -8,13 +8,6 @@
       "id": "3617"
     },
     {
-      "libelle": "some more mariem",
-      "prixUnitaire": "875",
-      "photo": "orange.jpg",
-      "categorie": "food",
-      "id": "9685"
-    },
-    {
       "libelle": "this is some meat",
       "prixUnitaire": "44",
       "photo": "meat.jpg",
@@ -34,6 +27,13 @@
       "photo": "saw.jpg",
       "categorie": "food",
       "id": "6277"
+    },
+    {
+      "libelle": "madanina",
+      "prixUnitaire": "85",
+      "photo": "orange.jpg",
+      "categorie": "food",
+      "id": "1129"
     }
   ]
 }
