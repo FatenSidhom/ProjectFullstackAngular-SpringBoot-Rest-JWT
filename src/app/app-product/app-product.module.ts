@@ -5,9 +5,11 @@ import { FormProductComponent } from './form-product/form-product/form-product.c
 import { MainProductComponent } from './main-product/main-product/main-product.component';
 import { ProductComponent } from './product/product/product.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { DeleteDialogComponent } from './comps/delete-dialog/delete-dialog.component';
+import {MatDialogModule} from "@angular/material/dialog";
 
 @NgModule({
-  declarations: [FormProductComponent, MainProductComponent, ProductComponent],
-  imports: [CommonModule, AppProductRoutingModule, ReactiveFormsModule],
+  declarations: [FormProductComponent, MainProductComponent, ProductComponent, DeleteDialogComponent],
+    imports: [CommonModule, AppProductRoutingModule, ReactiveFormsModule, MatDialogModule],
 })
 export class AppProductModule {}

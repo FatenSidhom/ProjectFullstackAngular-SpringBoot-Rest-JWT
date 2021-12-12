@@ -6,6 +6,8 @@ import { HeaderComponent } from './shared/header/header/header.component';
 import { HomeComponent } from './shared/home/home/home.component';
 import { NotFoundComponent } from './shared/not-found/not-found/not-found.component';
 import { HttpClientModule } from '@angular/common/http';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {MatDialogModule} from "@angular/material/dialog";
 
 @NgModule({
   declarations: [
@@ -14,7 +16,7 @@ import { HttpClientModule } from '@angular/common/http';
     HomeComponent,
     NotFoundComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, HttpClientModule],
+  imports: [BrowserModule, AppRoutingModule, HttpClientModule, BrowserAnimationsModule, MatDialogModule],
   providers: [],
   bootstrap: [AppComponent],
 })

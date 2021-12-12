@@ -1,27 +1,6 @@
 {
   "products": [
     {
-      "id": "45678",
-      "libelle": "food1",
-      "prixUnitaire": "5858",
-      "photo": "dryfruit.jpg",
-      "categorie": "food"
-    },
-    {
-      "id": "6445",
-      "libelle": "mariem ",
-      "prixUnitaire": "785",
-      "photo": "orange.jpg",
-      "categorie": "food"
-    },
-    {
-      "libelle": "some juice",
-      "prixUnitaire": "889",
-      "photo": "juice.jpg",
-      "categorie": "food",
-      "id": "9577"
-    },
-    {
       "libelle": "some oranges",
       "prixUnitaire": "7856",
       "photo": "orange.jpg",
@@ -29,14 +8,7 @@
       "id": "3617"
     },
     {
-      "libelle": "some dryfruit",
-      "prixUnitaire": "8563",
-      "photo": "dryfruit.jpg",
-      "categorie": "food",
-      "id": "2936"
-    },
-    {
-      "libelle": "some more oranges",
+      "libelle": "some more mariem",
       "prixUnitaire": "875",
       "photo": "orange.jpg",
       "categorie": "food",
@@ -48,6 +20,20 @@
       "photo": "meat.jpg",
       "categorie": "food",
       "id": "7899"
+    },
+    {
+      "libelle": "sawssen",
+      "prixUnitaire": "85",
+      "photo": "juice.jpg",
+      "categorie": "food",
+      "id": "1908"
+    },
+    {
+      "libelle": "sawssen merjetni",
+      "prixUnitaire": "0",
+      "photo": "saw.jpg",
+      "categorie": "food",
+      "id": "6277"
     }
   ]
 }
