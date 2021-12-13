@@ -1,0 +1,1096 @@
+{
+  "promotions": [
+    {
+      "name": "amine",
+      "startingDate": "1997-08-22",
+      "endingDate": "2021-12-13",
+      "value": 5,
+      "id": 1
+    },
+    {
+      "id": 3,
+      "name": "test2",
+      "startingDate": "1997-01-01",
+      "endingDate": "2300-01-01",
+      "value": 55
+    },
+    {
+      "name": "test3",
+      "startingDate": "2022-01-01",
+      "endingDate": "2022-01-02",
+      "value": 12,
+      "id": 4
+    },
+    {
+      "name": "test4",
+      "startingDate": "2024-01-01",
+      "endingDate": "2028-01-01",
+      "value": 7,
+      "id": 5
+    }
+  ],
+  "category": [
+    {
+      "id": 1,
+      "name": "Food",
+      "ref": "#222",
+      "quantity": 300
+    },
+    {
+      "id": 2,
+      "name": "Tools",
+      "ref": "#222",
+      "quantity": 300
+    },
+    {
+      "id": 3,
+      "name": "Electronics",
+      "ref": "#33",
+      "quantity": 153
+    },
+    {
+      "id": 4,
+      "name": "Health",
+      "ref": "#456",
+      "quantity": 122
+    },
+    {
+      "id": 5,
+      "name": "Music",
+      "ref": "#rrr",
+      "quantity": 456
+    },
+    {
+      "id": 7,
+      "name": "Kids",
+      "ref": "#456",
+      "quantity": 123
+    },
+    {
+      "name": "Garden",
+      "ref": "#789",
+      "quantity": 123,
+      "id": 8
+    },
+    {
+      "id": 9,
+      "name": "Sports",
+      "ref": "#lll",
+      "quantity": 123
+    },
+    {
+      "name": "Games",
+      "ref": "#789",
+      "quantity": 123,
+      "id": 10
+    },
+    {
+      "name": "amine",
+      "ref": "#555",
+      "quantity": 123,
+      "id": 11
+    }
+  ],
+  "products": [
+    {
+      "id": {
+        "$oid": "61af9f20fc13ae328d000294"
+      },
+      "name": "Longos - Assorted Sandwich",
+      "price": "$998.78",
+      "category": "Shoes",
+      "rayon": "Consumer Durables",
+      "stock": "KMB"
+    },
+    {
+      "id": {
+        "$oid": "61af9f20fc13ae328d000295"
+      },
+      "name": "Bagel - Ched Chs Presliced",
+      "price": "$141.55",
+      "category": "Beauty",
+      "rayon": "Consumer Durables",
+      "stock": "JASN"
+    },
+    {
+      "id": {
+        "$oid": "61af9f20fc13ae328d000296"
+      },
+      "name": "Juice - Grapefruit, 341 Ml",
+      "price": "$499.19",
+      "category": "Automotive",
+      "rayon": "Consumer Services",
+      "stock": "SNHNL"
+    },
+    {
+      "id": {
+        "$oid": "61af9f20fc13ae328d000297"
+      },
+      "name": "Egg Patty Fried",
+      "price": "$212.32",
+      "category": "Grocery",
+      "rayon": "Health Care",
+      "stock": "TCON"
+    },
+    {
+      "id": {
+        "$oid": "61af9f20fc13ae328d000298"
+      },
+      "name": "Venison - Ground",
+      "price": "$858.51",
+      "category": "Tools",
+      "rayon": "Consumer Durables",
+      "stock": "DLX"
+    },
+    {
+      "id": {
+        "$oid": "61af9f20fc13ae328d000299"
+      },
+      "name": "Capon - Whole",
+      "price": "$381.02",
+      "category": "Kids",
+      "rayon": "Consumer Services",
+      "stock": "ROST"
+    },
+    {
+      "id": {
+        "$oid": "61af9f20fc13ae328d00029a"
+      },
+      "name": "Ice Cream Bar - Hagen Daz",
+      "price": "$423.12",
+      "category": "Music",
+      "rayon": "Finance",
+      "stock": "GLBR"
+    },
+    {
+      "id": {
+        "$oid": "61af9f20fc13ae328d00029b"
+      },
+      "name": "Pernod",
+      "price": "$456.72",
+      "category": "Grocery",
+      "rayon": "Energy",
+      "stock": "KEG"
+    },
+    {
+      "id": {
+        "$oid": "61af9f20fc13ae328d00029c"
+      },
+      "name": "Cheese - Mix",
+      "price": "$440.02",
+      "category": "Music",
+      "rayon": "Technology",
+      "stock": "WSTG"
+    },
+    {
+      "id": {
+        "$oid": "61af9f20fc13ae328d00029d"
+      },
+      "name": "Latex Rubber Gloves Size 9",
+      "price": "$57.03",
+      "category": "Music",
+      "rayon": "Public Utilities",
+      "stock": "CTDD"
+    },
+    {
+      "id": {
+        "$oid": "61af9f20fc13ae328d00029e"
+      },
+      "name": "Wine - White, Antinore Orvieto",
+      "price": "$395.33",
+      "category": "Tools",
+      "rayon": "Consumer Durables",
+      "stock": "NC"
+    },
+    {
+      "id": {
+        "$oid": "61af9f20fc13ae328d00029f"
+      },
+      "name": "Langers - Ruby Red Grapfruit",
+      "price": "$19.05",
+      "category": "Games",
+      "rayon": "Capital Goods",
+      "stock": "ARTW"
+    },
+    {
+      "id": {
+        "$oid": "61af9f20fc13ae328d0002a0"
+      },
+      "name": "Veal - Kidney",
+      "price": "$791.83",
+      "category": "Industrial",
+      "rayon": "Basic Industries",
+      "stock": "SXCP"
+    },
+    {
+      "id": {
+        "$oid": "61af9f20fc13ae328d0002a1"
+      },
+      "name": "Wiberg Cure",
+      "price": "$469.67",
+      "category": "Health",
+      "rayon": "Finance",
+      "stock": "MDLX"
+    },
+    {
+      "id": {
+        "$oid": "61af9f20fc13ae328d0002a2"
+      },
+      "name": "Chevril",
+      "price": "$372.55",
+      "category": "Electronics",
+      "rayon": "Finance",
+      "stock": "MLP"
+    },
+    {
+      "id": {
+        "$oid": "61af9f20fc13ae328d0002a3"
+      },
+      "name": "Wine - Red, Mouton Cadet",
+      "price": "$182.91",
+      "category": "Home",
+      "rayon": "Finance",
+      "stock": "SCHW"
+    },
+    {
+      "id": {
+        "$oid": "61af9f20fc13ae328d0002a4"
+      },
+      "name": "Wine - Chenin Blanc K.w.v.",
+      "price": "$489.69",
+      "category": "Baby",
+      "rayon": "n/a",
+      "stock": "CBB^B"
+    },
+    {
+      "id": {
+        "$oid": "61af9f20fc13ae328d0002a5"
+      },
+      "name": "Pasta - Orecchiette",
+      "price": "$548.88",
+      "category": "Clothing",
+      "rayon": "n/a",
+      "stock": "TEI"
+    },
+    {
+      "id": {
+        "$oid": "61af9f20fc13ae328d0002a6"
+      },
+      "name": "Wine - Ej Gallo Sierra Valley",
+      "price": "$144.90",
+      "category": "Computers",
+      "rayon": "Finance",
+      "stock": "WDR"
+    },
+    {
+      "id": {
+        "$oid": "61af9f20fc13ae328d0002a7"
+      },
+      "name": "Mushroom - Enoki, Dry",
+      "price": "$764.86",
+      "category": "Electronics",
+      "rayon": "Finance",
+      "stock": "NGHC"
+    },
+    {
+      "id": {
+        "$oid": "61af9f20fc13ae328d0002a8"
+      },
+      "name": "Crab - Meat Combo",
+      "price": "$222.16",
+      "category": "Shoes",
+      "rayon": "Public Utilities",
+      "stock": "CALL"
+    },
+    {
+      "id": {
+        "$oid": "61af9f20fc13ae328d0002a9"
+      },
+      "name": "Gatorade - Xfactor Berry",
+      "price": "$406.88",
+      "category": "Movies",
+      "rayon": "n/a",
+      "stock": "AFSI^E"
+    },
+    {
+      "id": {
+        "$oid": "61af9f20fc13ae328d0002aa"
+      },
+      "name": "Wine - Manischewitz Concord",
+      "price": "$331.82",
+      "category": "Baby",
+      "rayon": "n/a",
+      "stock": "ZTR"
+    },
+    {
+      "id": {
+        "$oid": "61af9f20fc13ae328d0002ab"
+      },
+      "name": "Food Colouring - Red",
+      "price": "$875.94",
+      "category": "Books",
+      "rayon": "Consumer Services",
+      "stock": "DKS"
+    },
+    {
+      "id": {
+        "$oid": "61af9f20fc13ae328d0002ac"
+      },
+      "name": "Coffee - Beans, Whole",
+      "price": "$91.49",
+      "category": "Games",
+      "rayon": "Transportation",
+      "stock": "TK"
+    },
+    {
+      "id": {
+        "$oid": "61af9f20fc13ae328d0002ad"
+      },
+      "name": "Rum - White, Gg White",
+      "price": "$658.86",
+      "category": "Industrial",
+      "rayon": "Consumer Services",
+      "stock": "LANDP"
+    },
+    {
+      "id": {
+        "$oid": "61af9f20fc13ae328d0002ae"
+      },
+      "name": "Longos - Lasagna Beef",
+      "price": "$680.06",
+      "category": "Music",
+      "rayon": "n/a",
+      "stock": "MHNB.CL"
+    },
+    {
+      "id": {
+        "$oid": "61af9f20fc13ae328d0002af"
+      },
+      "name": "Tomatoes - Vine Ripe, Yellow",
+      "price": "$144.24",
+      "category": "Books",
+      "rayon": "Consumer Durables",
+      "stock": "ABG"
+    },
+    {
+      "id": {
+        "$oid": "61af9f20fc13ae328d0002b0"
+      },
+      "name": "Soup - Campbells Mac N Cheese",
+      "price": "$968.68",
+      "category": "Computers",
+      "rayon": "Energy",
+      "stock": "SOI"
+    },
+    {
+      "id": {
+        "$oid": "61af9f20fc13ae328d0002b1"
+      },
+      "name": "Soup Bowl Clear 8oz92008",
+      "price": "$468.39",
+      "category": "Shoes",
+      "rayon": "Finance",
+      "stock": "UNB"
+    },
+    {
+      "id": {
+        "$oid": "61af9f20fc13ae328d0002b2"
+      },
+      "name": "Pepsi - Diet, 355 Ml",
+      "price": "$921.47",
+      "category": "Games",
+      "rayon": "Public Utilities",
+      "stock": "EDN"
+    },
+    {
+      "id": {
+        "$oid": "61af9f20fc13ae328d0002b3"
+      },
+      "name": "Bagel - Sesame Seed Presliced",
+      "price": "$480.50",
+      "category": "Baby",
+      "rayon": "n/a",
+      "stock": "VPV"
+    },
+    {
+      "id": {
+        "$oid": "61af9f20fc13ae328d0002b4"
+      },
+      "name": "Beer - Fruli",
+      "price": "$550.47",
+      "category": "Shoes",
+      "rayon": "Health Care",
+      "stock": "SELB"
+    },
+    {
+      "id": {
+        "$oid": "61af9f20fc13ae328d0002b5"
+      },
+      "name": "Salmon - Sockeye Raw",
+      "price": "$600.51",
+      "category": "Industrial",
+      "rayon": "Energy",
+      "stock": "MPLX"
+    },
+    {
+      "id": {
+        "$oid": "61af9f20fc13ae328d0002b6"
+      },
+      "name": "Yeast Dry - Fermipan",
+      "price": "$44.20",
+      "category": "Industrial",
+      "rayon": "Capital Goods",
+      "stock": "SPR"
+    },
+    {
+      "id": {
+        "$oid": "61af9f20fc13ae328d0002b7"
+      },
+      "name": "Zucchini - Green",
+      "price": "$882.45",
+      "category": "Computers",
+      "rayon": "Technology",
+      "stock": "SMSI"
+    },
+    {
+      "id": {
+        "$oid": "61af9f20fc13ae328d0002b8"
+      },
+      "name": "Container - Clear 16 Oz",
+      "price": "$612.57",
+      "category": "Computers",
+      "rayon": "Public Utilities",
+      "stock": "DTJ"
+    },
+    {
+      "id": {
+        "$oid": "61af9f20fc13ae328d0002b9"
+      },
+      "name": "Apple - Macintosh",
+      "price": "$344.48",
+      "category": "Clothing",
+      "rayon": "Basic Industries",
+      "stock": "UFPI"
+    },
+    {
+      "id": {
+        "$oid": "61af9f20fc13ae328d0002ba"
+      },
+      "name": "Beer - Muskoka Cream Ale",
+      "price": "$866.04",
+      "category": "Kids",
+      "rayon": "n/a",
+      "stock": "EWZS"
+    },
+    {
+      "id": {
+        "$oid": "61af9f20fc13ae328d0002bb"
+      },
+      "name": "Bread - Multigrain",
+      "price": "$240.06",
+      "category": "Industrial",
+      "rayon": "Finance",
+      "stock": "UFCS"
+    },
+    {
+      "id": {
+        "$oid": "61af9f20fc13ae328d0002bc"
+      },
+      "name": "Appetizer - Spring Roll, Veg",
+      "price": "$53.33",
+      "category": "Games",
+      "rayon": "n/a",
+      "stock": "FTAI"
+    },
+    {
+      "id": {
+        "$oid": "61af9f20fc13ae328d0002bd"
+      },
+      "name": "Lettuce - Romaine",
+      "price": "$67.46",
+      "category": "Computers",
+      "rayon": "Technology",
+      "stock": "MIDD"
+    },
+    {
+      "id": {
+        "$oid": "61af9f20fc13ae328d0002be"
+      },
+      "name": "Pasta - Fett Alfredo, Single Serve",
+      "price": "$865.85",
+      "category": "Automotive",
+      "rayon": "Consumer Services",
+      "stock": "NVEE"
+    },
+    {
+      "id": {
+        "$oid": "61af9f20fc13ae328d0002bf"
+      },
+      "name": "Towel - Roll White",
+      "price": "$120.94",
+      "category": "Books",
+      "rayon": "Health Care",
+      "stock": "RXII"
+    },
+    {
+      "id": {
+        "$oid": "61af9f20fc13ae328d0002c0"
+      },
+      "name": "Soup - Campbells Asian Noodle",
+      "price": "$967.86",
+      "category": "Movies",
+      "rayon": "Consumer Services",
+      "stock": "MGM"
+    },
+    {
+      "id": {
+        "$oid": "61af9f20fc13ae328d0002c1"
+      },
+      "name": "Lobster - Live",
+      "price": "$765.94",
+      "category": "Movies",
+      "rayon": "n/a",
+      "stock": "ZB^G"
+    },
+    {
+      "id": {
+        "$oid": "61af9f20fc13ae328d0002c2"
+      },
+      "name": "Wine - White, Pelee Island",
+      "price": "$507.00",
+      "category": "Electronics",
+      "rayon": "Health Care",
+      "stock": "OBLN"
+    },
+    {
+      "id": {
+        "$oid": "61af9f20fc13ae328d0002c3"
+      },
+      "name": "Sobe - Cranberry Grapefruit",
+      "price": "$221.73",
+      "category": "Tools",
+      "rayon": "Capital Goods",
+      "stock": "MICTW"
+    },
+    {
+      "id": {
+        "$oid": "61af9f20fc13ae328d0002c4"
+      },
+      "name": "Salt - Kosher",
+      "price": "$392.78",
+      "category": "Shoes",
+      "rayon": "Health Care",
+      "stock": "ALBO"
+    },
+    {
+      "id": {
+        "$oid": "61af9f20fc13ae328d0002c5"
+      },
+      "name": "Chocolate - Milk Coating",
+      "price": "$116.51",
+      "category": "Outdoors",
+      "rayon": "Capital Goods",
+      "stock": "BWA"
+    },
+    {
+      "id": {
+        "$oid": "61af9f20fc13ae328d0002c6"
+      },
+      "name": "Cheese - Augre Des Champs",
+      "price": "$698.37",
+      "category": "Movies",
+      "rayon": "n/a",
+      "stock": "SPG^J"
+    },
+    {
+      "id": {
+        "$oid": "61af9f20fc13ae328d0002c7"
+      },
+      "name": "Daves Island Stinger",
+      "price": "$283.26",
+      "category": "Home",
+      "rayon": "n/a",
+      "stock": "VER^F"
+    },
+    {
+      "id": {
+        "$oid": "61af9f20fc13ae328d0002c8"
+      },
+      "name": "Muffin - Bran Ind Wrpd",
+      "price": "$241.73",
+      "category": "Music",
+      "rayon": "Consumer Services",
+      "stock": "BXP"
+    },
+    {
+      "id": {
+        "$oid": "61af9f20fc13ae328d0002c9"
+      },
+      "name": "Soup Campbells Turkey Veg.",
+      "price": "$340.47",
+      "category": "Kids",
+      "rayon": "Technology",
+      "stock": "DLHC"
+    },
+    {
+      "id": {
+        "$oid": "61af9f20fc13ae328d0002ca"
+      },
+      "name": "Shrimp - Black Tiger 16/20",
+      "price": "$622.04",
+      "category": "Music",
+      "rayon": "Consumer Services",
+      "stock": "NSR"
+    },
+    {
+      "id": {
+        "$oid": "61af9f20fc13ae328d0002cb"
+      },
+      "name": "Wine - Toasted Head",
+      "price": "$574.57",
+      "category": "Garden",
+      "rayon": "Finance",
+      "stock": "VRTS"
+    },
+    {
+      "id": {
+        "$oid": "61af9f20fc13ae328d0002cc"
+      },
+      "name": "Longos - Lasagna Beef",
+      "price": "$280.09",
+      "category": "Clothing",
+      "rayon": "Finance",
+      "stock": "XL"
+    },
+    {
+      "id": {
+        "$oid": "61af9f20fc13ae328d0002cd"
+      },
+      "name": "Tofu - Soft",
+      "price": "$723.10",
+      "category": "Computers",
+      "rayon": "Technology",
+      "stock": "SYMC"
+    },
+    {
+      "id": {
+        "$oid": "61af9f20fc13ae328d0002ce"
+      },
+      "name": "Ice Cream - Vanilla",
+      "price": "$61.44",
+      "category": "Garden",
+      "rayon": "Capital Goods",
+      "stock": "MICT"
+    },
+    {
+      "id": {
+        "$oid": "61af9f20fc13ae328d0002cf"
+      },
+      "name": "Bagelers - Cinn / Brown Sugar",
+      "price": "$46.84",
+      "category": "Baby",
+      "rayon": "Miscellaneous",
+      "stock": "ITUS"
+    },
+    {
+      "id": {
+        "$oid": "61af9f20fc13ae328d0002d0"
+      },
+      "name": "Beef - Bones, Marrow",
+      "price": "$790.29",
+      "category": "Home",
+      "rayon": "n/a",
+      "stock": "JHY"
+    },
+    {
+      "id": {
+        "$oid": "61af9f20fc13ae328d0002d1"
+      },
+      "name": "Chivas Regal - 12 Year Old",
+      "price": "$905.72",
+      "category": "Music",
+      "rayon": "Finance",
+      "stock": "SYF"
+    },
+    {
+      "id": {
+        "$oid": "61af9f20fc13ae328d0002d2"
+      },
+      "name": "Cranberries - Frozen",
+      "price": "$890.78",
+      "category": "Kids",
+      "rayon": "Finance",
+      "stock": "SLMBP"
+    },
+    {
+      "id": {
+        "$oid": "61af9f20fc13ae328d0002d3"
+      },
+      "name": "Scallops - U - 10",
+      "price": "$639.86",
+      "category": "Games",
+      "rayon": "Finance",
+      "stock": "WTFCM"
+    },
+    {
+      "id": {
+        "$oid": "61af9f20fc13ae328d0002d4"
+      },
+      "name": "Cheese - Grie Des Champ",
+      "price": "$956.84",
+      "category": "Garden",
+      "rayon": "Finance",
+      "stock": "TBBK"
+    },
+    {
+      "id": {
+        "$oid": "61af9f21fc13ae328d0002d5"
+      },
+      "name": "Taro Leaves",
+      "price": "$96.18",
+      "category": "Sports",
+      "rayon": "Capital Goods",
+      "stock": "SRI"
+    },
+    {
+      "id": {
+        "$oid": "61af9f21fc13ae328d0002d6"
+      },
+      "name": "Shrimp - 21/25, Peel And Deviened",
+      "price": "$315.68",
+      "category": "Health",
+      "rayon": "Health Care",
+      "stock": "PAVMW"
+    },
+    {
+      "id": {
+        "$oid": "61af9f21fc13ae328d0002d7"
+      },
+      "name": "Danishes - Mini Raspberry",
+      "price": "$119.81",
+      "category": "Computers",
+      "rayon": "Public Utilities",
+      "stock": "VEON"
+    },
+    {
+      "id": {
+        "$oid": "61af9f21fc13ae328d0002d8"
+      },
+      "name": "Apple - Northern Spy",
+      "price": "$647.59",
+      "category": "Movies",
+      "rayon": "Health Care",
+      "stock": "GILD"
+    },
+    {
+      "id": {
+        "$oid": "61af9f21fc13ae328d0002d9"
+      },
+      "name": "Sproutsmustard Cress",
+      "price": "$552.72",
+      "category": "Kids",
+      "rayon": "Finance",
+      "stock": "NDAQ"
+    },
+    {
+      "id": {
+        "$oid": "61af9f21fc13ae328d0002da"
+      },
+      "name": "Gelatine Leaves - Envelopes",
+      "price": "$516.84",
+      "category": "Jewelry",
+      "rayon": "n/a",
+      "stock": "BL"
+    },
+    {
+      "id": {
+        "$oid": "61af9f21fc13ae328d0002db"
+      },
+      "name": "Muffin Mix - Morning Glory",
+      "price": "$276.85",
+      "category": "Books",
+      "rayon": "Transportation",
+      "stock": "FRO"
+    },
+    {
+      "id": {
+        "$oid": "61af9f21fc13ae328d0002dc"
+      },
+      "name": "Cheese - Pied De Vents",
+      "price": "$565.35",
+      "category": "Movies",
+      "rayon": "Capital Goods",
+      "stock": "AEIS"
+    },
+    {
+      "id": {
+        "$oid": "61af9f21fc13ae328d0002dd"
+      },
+      "name": "Anchovy Fillets",
+      "price": "$142.85",
+      "category": "Clothing",
+      "rayon": "Finance",
+      "stock": "SSFN"
+    },
+    {
+      "id": {
+        "$oid": "61af9f21fc13ae328d0002de"
+      },
+      "name": "Wine - Bouchard La Vignee Pinot",
+      "price": "$997.11",
+      "category": "Health",
+      "rayon": "n/a",
+      "stock": "CUBI^F"
+    },
+    {
+      "id": {
+        "$oid": "61af9f21fc13ae328d0002df"
+      },
+      "name": "Arctic Char - Fillets",
+      "price": "$971.77",
+      "category": "Beauty",
+      "rayon": "Health Care",
+      "stock": "LH"
+    },
+    {
+      "id": {
+        "$oid": "61af9f21fc13ae328d0002e0"
+      },
+      "name": "Muffin Mix - Corn Harvest",
+      "price": "$20.39",
+      "category": "Baby",
+      "rayon": "Technology",
+      "stock": "WPPGY"
+    },
+    {
+      "id": {
+        "$oid": "61af9f21fc13ae328d0002e1"
+      },
+      "name": "Coffee - Cafe Moreno",
+      "price": "$224.80",
+      "category": "Toys",
+      "rayon": "Health Care",
+      "stock": "ISRG"
+    },
+    {
+      "id": {
+        "$oid": "61af9f21fc13ae328d0002e2"
+      },
+      "name": "Coffee - Almond Amaretto",
+      "price": "$201.67",
+      "category": "Beauty",
+      "rayon": "Basic Industries",
+      "stock": "PPP"
+    },
+    {
+      "id": {
+        "$oid": "61af9f21fc13ae328d0002e3"
+      },
+      "name": "Arizona - Green Tea",
+      "price": "$970.29",
+      "category": "Baby",
+      "rayon": "n/a",
+      "stock": "HE^U"
+    },
+    {
+      "id": {
+        "$oid": "61af9f21fc13ae328d0002e4"
+      },
+      "name": "Cake - Mini Potato Pancake",
+      "price": "$231.05",
+      "category": "Outdoors",
+      "rayon": "n/a",
+      "stock": "GPM"
+    },
+    {
+      "id": {
+        "$oid": "61af9f21fc13ae328d0002e5"
+      },
+      "name": "Milk - 1%",
+      "price": "$953.85",
+      "category": "Sports",
+      "rayon": "n/a",
+      "stock": "ADRD"
+    },
+    {
+      "id": {
+        "$oid": "61af9f21fc13ae328d0002e6"
+      },
+      "name": "Beans - Kidney, Canned",
+      "price": "$927.32",
+      "category": "Toys",
+      "rayon": "n/a",
+      "stock": "CUBI^D"
+    },
+    {
+      "id": {
+        "$oid": "61af9f21fc13ae328d0002e7"
+      },
+      "name": "Sauerkraut",
+      "price": "$389.13",
+      "category": "Toys",
+      "rayon": "Capital Goods",
+      "stock": "WKHS"
+    },
+    {
+      "id": {
+        "$oid": "61af9f21fc13ae328d0002e8"
+      },
+      "name": "Lid - 10,12,16 Oz",
+      "price": "$895.88",
+      "category": "Home",
+      "rayon": "n/a",
+      "stock": "ALL^C"
+    },
+    {
+      "id": {
+        "$oid": "61af9f21fc13ae328d0002e9"
+      },
+      "name": "Juice - Grape, White",
+      "price": "$188.44",
+      "category": "Games",
+      "rayon": "Public Utilities",
+      "stock": "ETE"
+    },
+    {
+      "id": {
+        "$oid": "61af9f21fc13ae328d0002ea"
+      },
+      "name": "Crush - Cream Soda",
+      "price": "$374.61",
+      "category": "Games",
+      "rayon": "n/a",
+      "stock": "KMI^A"
+    },
+    {
+      "id": {
+        "$oid": "61af9f21fc13ae328d0002eb"
+      },
+      "name": "Beef - Kindney, Whole",
+      "price": "$922.00",
+      "category": "Movies",
+      "rayon": "Capital Goods",
+      "stock": "AIMC"
+    },
+    {
+      "id": {
+        "$oid": "61af9f21fc13ae328d0002ec"
+      },
+      "name": "Chinese Foods - Thick Noodles",
+      "price": "$992.35",
+      "category": "Movies",
+      "rayon": "Health Care",
+      "stock": "PETX"
+    },
+    {
+      "id": {
+        "$oid": "61af9f21fc13ae328d0002ed"
+      },
+      "name": "Tea - Green",
+      "price": "$626.29",
+      "category": "Movies",
+      "rayon": "Health Care",
+      "stock": "CHEKW"
+    },
+    {
+      "id": {
+        "$oid": "61af9f21fc13ae328d0002ee"
+      },
+      "name": "Cake - Mini Cheesecake",
+      "price": "$542.86",
+      "category": "Kids",
+      "rayon": "Consumer Durables",
+      "stock": "IDSA"
+    },
+    {
+      "id": {
+        "$oid": "61af9f21fc13ae328d0002ef"
+      },
+      "name": "Bread - Rolls, Corn",
+      "price": "$331.46",
+      "category": "Baby",
+      "rayon": "Consumer Non-Durables",
+      "stock": "DPS"
+    },
+    {
+      "id": {
+        "$oid": "61af9f21fc13ae328d0002f0"
+      },
+      "name": "Nut - Almond, Blanched, Whole",
+      "price": "$551.28",
+      "category": "Tools",
+      "rayon": "Transportation",
+      "stock": "HUNTU"
+    },
+    {
+      "id": {
+        "$oid": "61af9f21fc13ae328d0002f1"
+      },
+      "name": "Cocoa Powder - Dutched",
+      "price": "$689.20",
+      "category": "Jewelry",
+      "rayon": "Technology",
+      "stock": "OIIM"
+    },
+    {
+      "id": {
+        "$oid": "61af9f21fc13ae328d0002f2"
+      },
+      "name": "Chinese Foods - Chicken",
+      "price": "$638.66",
+      "category": "Toys",
+      "rayon": "Consumer Non-Durables",
+      "stock": "CORE"
+    },
+    {
+      "id": {
+        "$oid": "61af9f21fc13ae328d0002f3"
+      },
+      "name": "Bag - Regular Kraft 20 Lb",
+      "price": "$464.83",
+      "category": "Industrial",
+      "rayon": "Public Utilities",
+      "stock": "OGE"
+    },
+    {
+      "id": {
+        "$oid": "61af9f21fc13ae328d0002f4"
+      },
+      "name": "Octopus",
+      "price": "$487.68",
+      "category": "Toys",
+      "rayon": "Public Utilities",
+      "stock": "ED"
+    },
+    {
+      "id": {
+        "$oid": "61af9f21fc13ae328d0002f5"
+      },
+      "name": "Chip - Potato Dill Pickle",
+      "price": "$822.75",
+      "category": "Baby",
+      "rayon": "Energy",
+      "stock": "WMLP"
+    },
+    {
+      "id": {
+        "$oid": "61af9f21fc13ae328d0002f6"
+      },
+      "name": "Capers - Pickled",
+      "price": "$127.60",
+      "category": "Toys",
+      "rayon": "Basic Industries",
+      "stock": "GFA"
+    },
+    {
+      "id": {
+        "$oid": "61af9f21fc13ae328d0002f7"
+      },
+      "name": "Parsley - Dried",
+      "price": "$275.42",
+      "category": "Baby",
+      "rayon": "Miscellaneous",
+      "stock": "SSNT"
+    }
+  ]
+}
