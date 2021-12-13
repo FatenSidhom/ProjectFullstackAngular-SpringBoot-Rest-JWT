@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { ProductService } from 'src/app/core/services/Product/product.service';
 import { Product } from 'src/app/core/model/product.model';
-import {DeleteDialogComponent} from "../../comps/delete-dialog/delete-dialog.component";
-import {MatDialog} from "@angular/material/dialog";
+import { DeleteDialogComponent } from '../delete-dialog/delete-dialog.component';
+import { MatDialog } from '@angular/material/dialog';
 
 @Component({
   selector: 'app-main-product',
@@ -15,8 +15,10 @@ export class MainProductComponent implements OnInit {
   buttonString: String = 'Add New Product';
   listProduct: Product[] = [];
 
-  constructor(private productService: ProductService, public dialog: MatDialog) {
-  }
+  constructor(
+    private productService: ProductService,
+    public dialog: MatDialog
+  ) {}
 
   ngOnInit(): void {
     this.productService
@@ -35,7 +37,10 @@ export class MainProductComponent implements OnInit {
   }
 
   deleteProduct(p: Product) {
-    const myCompDialog = this.dialog.open(DeleteDialogComponent,{disableClose: true, panelClass:'dialog-custom'});
+    const myCompDialog = this.dialog.open(DeleteDialogComponent, {
+      disableClose: true,
+      panelClass: 'dialog-custom',
+    });
     myCompDialog.afterOpened().subscribe((res) => {
       // Trigger After Dialog Opened
       console.log('After Opened', { res });
@@ -43,17 +48,13 @@ export class MainProductComponent implements OnInit {
     myCompDialog.afterClosed().subscribe((res) => {
       // Trigger After Dialog Closed
       console.log('After Closed', { res });
-      if (res){
+      if (res) {
         let i = this.listProduct.indexOf(p);
         this.productService
           .deleteProduct(p.id)
           .subscribe(() => this.listProduct.splice(i, 1));
-
       }
-
-
     });
-
   }
 
   updateProduct(p: Product) {
@@ -67,7 +68,7 @@ export class MainProductComponent implements OnInit {
       () => this.listProduct.push(product),
       () => console.log('error')
     );
-   this.changePage();
+    this.changePage();
     this.inputProduct = new Product();
   }
 
@@ -77,8 +78,8 @@ export class MainProductComponent implements OnInit {
 
     this.productService.updateProduct(product).subscribe(
       () => (this.listProduct[i] = product),
-      () => console.log('error'));
+      () => console.log('error')
+    );
     this.changePage();
-
   }
 }
