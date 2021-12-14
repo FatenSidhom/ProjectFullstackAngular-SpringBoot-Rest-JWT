@@ -28,15 +28,5 @@ export class PromotionsService {
   }
   update(id:number, promo:promotions){
     return this.http.put<promotions>(`${this.urlPromo}/${id}`, JSON.stringify(promo),this.httpOptions);
-   
-  }
-//   update(id:number, category:Category): Observable<Category> {
-//     return this.http.put<Category>(`${this.apiUrl}/${id}`, JSON.stringify(category), this.httpOptions)
-//     .pipe(
-//       catchError(this.errorHandler)
-//     )
-//   }
-//   getAllProducts():Observable<ProductCateg[]> {
-//     return this.http.get<ProductCateg[]>(this.prodUrl)
-    
+  }    
  }

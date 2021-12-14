@@ -19,8 +19,8 @@ import { MatMenuModule } from '@angular/material/menu';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { FooterComponent } from './footer/footer.component';
 import { PromotionComponent } from './Promotion/promotion/promotion.component';
-import { PromotionFormComponent } from './Promotion/promotion-form/promotion-form.component';
 import { HttpClientModule } from '@angular/common/http';
+import { ProductInPromotionComponent } from './Promotion/product-in-promotion/product-in-promotion.component';
 
 
 @NgModule({
@@ -30,7 +30,7 @@ import { HttpClientModule } from '@angular/common/http';
     AdminComponent,
     FooterComponent,
     PromotionComponent,
-    PromotionFormComponent
+    ProductInPromotionComponent
   ],
   imports: [
     BrowserModule,

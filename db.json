@@ -1,4 +1,38 @@
 {
+  "product": [
+    {
+      "id": 1,
+      "name": "product1",
+      "picture": "https://tunisie-prix.com/images/produits/1200/6194002510064_7829.jpg",
+      "initialPrice": 100,
+      "newPrice": null,
+      "promotionId": null
+    },
+    {
+      "id": 2,
+      "name": "product2",
+      "picture": "https://tunisie-prix.com/images/produits/1200/6194002510064_7829.jpg",
+      "initialPrice": 100,
+      "newPrice": 80,
+      "promotionId": null
+    },
+    {
+      "id": 3,
+      "name": "product3",
+      "picture": "https://tunisie-prix.com/images/produits/1200/6194002510064_7829.jpg",
+      "initialPrice": 100,
+      "newPrice": null,
+      "promotionId": null
+    },
+    {
+      "id": 4,
+      "name": "product4",
+      "picture": "https://tunisie-prix.com/images/produits/1200/6194002510064_7829.jpg",
+      "initialPrice": 100,
+      "newPrice": 80,
+      "promotionId": null
+    }
+  ],
   "promotions": [
     {
       "name": "amine",
@@ -15,18 +49,18 @@
       "value": 55
     },
     {
-      "name": "test3",
-      "startingDate": "2022-01-01",
-      "endingDate": "2022-01-02",
-      "value": 12,
-      "id": 4
-    },
-    {
       "name": "test4",
       "startingDate": "2024-01-01",
       "endingDate": "2028-01-01",
       "value": 7,
       "id": 5
+    },
+    {
+      "name": "product after",
+      "startingDate": "2017-01-01",
+      "endingDate": "2024-01-02",
+      "value": 20,
+      "id": 6
     }
   ],
   "category": [
@@ -77,18 +111,6 @@
       "name": "Sports",
       "ref": "#lll",
       "quantity": 123
-    },
-    {
-      "name": "Games",
-      "ref": "#789",
-      "quantity": 123,
-      "id": 10
-    },
-    {
-      "name": "amine",
-      "ref": "#555",
-      "quantity": 123,
-      "id": 11
     }
   ],
   "products": [
